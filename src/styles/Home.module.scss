@@ -1,25 +1,10 @@
 @charset "UTF-8";
 
-// IMPORT COMPRNENTS
-@import "compornents/header";
-@import "compornents/nav";
-@import "compornents/footer";
-@import "compornents/value";
-@import "compornents/mixins";
-
-// IMPORT PAGE
-@import "compornents/pages/top";
-@import "compornents/pages/company";
-@import "compornents/pages/business";
-@import "compornents/pages/store";
-@import "compornents/pages/contact";
-@import "compornents/pages/error";
-@import "compornents/pages/privacy";
-@import "compornents/pages/product";
-
 /**-----------------
 	BASE
 *-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
 * ,
 *::before ,
 *::after {
@@ -34,7 +19,8 @@ html {
 }
 
 body {
-	font-family: $font-JP;
+	font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3",
+	Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 1.6em;
