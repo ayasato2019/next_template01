@@ -1,42 +1,48 @@
-.main {
-  width: 960px;
-  margin: 0 auto;
+@charset "UTF-8";
+
+// IMPORT COMPRNENTS
+@import "compornents/header";
+@import "compornents/nav";
+@import "compornents/footer";
+@import "compornents/value";
+@import "compornents/mixins";
+
+// IMPORT PAGE
+@import "compornents/pages/top";
+@import "compornents/pages/company";
+@import "compornents/pages/business";
+@import "compornents/pages/store";
+@import "compornents/pages/contact";
+@import "compornents/pages/error";
+@import "compornents/pages/privacy";
+@import "compornents/pages/product";
+
+/**-----------------
+	BASE
+*-----------------*/
+* ,
+*::before ,
+*::after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-o-box-sizing: border-box; 
 }
 
-.title {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #FFF;
+html {
+	font-size: 62.5%;
 }
 
-.publishedAt {
-  margin-bottom: 40px;
+body {
+	font-family: $font-JP;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.6em;
+	line-height: 1.6;
+	letter-spacing: 0.05em;
 }
 
-.post {
-  & > h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 40px 0 20px;
-    background-color: #eee;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-
-  & > h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 40px 0 16px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  & > p {
-    line-height: 1.8;
-    letter-spacing: 0.2px;
-  }
-
-  & > ol {
-    list-style-type: decimal;
-    list-style-position: inside;
-  }
+a {
+	text-decoration: none;
+	outline: none;
 }

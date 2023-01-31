@@ -1,37 +1,31 @@
-.main {
-  width: 960px;
-  margin: 0 auto;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+/**-----------------
+	BASE
+*-----------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
 }
 
-.title {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #FFF;
+html {
+  font-size: 62.5%;
 }
 
-.publishedAt {
-  margin-bottom: 40px;
+body {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6em;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
 }
 
-.post > h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 40px 0 20px;
-  background-color: #eee;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-.post > h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 40px 0 16px;
-  border-bottom: 1px solid #ddd;
-}
-.post > p {
-  line-height: 1.8;
-  letter-spacing: 0.2px;
-}
-.post > ol {
-  list-style-type: decimal;
-  list-style-position: inside;
+a {
+  text-decoration: none;
+  outline: none;
 }
