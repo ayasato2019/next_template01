@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { client } from "../libs/client";
 import Header from '../comprtnents/Header';
-import { StylesProvider } from '@material-ui/core';
+// import { StylesProvider } from '@material-ui/core';
 import styles from '../styles/Home.module.scss';
 
 // import { fetcher } from '@/comprtnents/CommonMeta';
