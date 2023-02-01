@@ -30,11 +30,14 @@ return (
 			</section>
 			<section>
 				<h1 className={styles.page__title}>News</h1>
-				<ul className={styles.article}>
+				<ul className={styles.news}>
 			{blog.map((blog) => (
-				<li key={blog.id} className={styles.article__item}>
-				<Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-			</li>
+				<li key={blog.id} className={styles.news__item}>
+					<Link href={`/blog/${blog.id}`}>
+						<p>{blog.category && blog.category.name}</p>
+						<h3>{blog.title}</h3>
+					</Link>
+				</li>
 			))}
 		</ul>
 

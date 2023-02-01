@@ -84,22 +84,39 @@
   letter-spacing: 0.15em;
 }
 
-.article {
+.news {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   height: auto;
   width: 100%;
   list-style: none;
 }
-.article__item {
+.news__item {
   margin-bottom: 48px;
   height: 31%;
   width: 100%;
 }
-.article__item:nth-of-type(1) {
-  margin-right: 0;
+.news__item a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+.news__item a p {
+  margin-right: 48px;
+  padding: 8px;
+  width: 100px;
+  text-align: center;
+  line-height: 1;
+  font-size: 12px;
+}
+.news__item a h3 {
+  padding: 8px;
+  text-align: left;
+  line-height: 1;
 }
