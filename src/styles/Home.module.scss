@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-/**-----------------
-	BASE
-*-----------------*/
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
-
 ///////////////////////////////////
 //COLOR
 ///////////////////////////////////
@@ -16,6 +11,11 @@ $COLOR_BULE_2 : #55A4F0;
 $COLOR_YELLOW : #FFEA2E;
 $COLOR_RED : #F0440D;
 $COLOR_PINK : #F00DA3;
+
+/**-----------------
+	BASE
+*-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 .body{
 	color: $COLOR_BLACK
@@ -98,17 +98,18 @@ $COLOR_PINK : #F00DA3;
 
 .article {
 	display: flex;
-	align-items: center;
-    align-content: center;
-    justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	align-content: flex-start;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	height: auto;
 	width: 100%;
 	list-style: none;
 	&__item {
-		margin-right: 2%;
+		margin-bottom: 48px;
 		height: 31%;
-		width: 25vmin;
+		width: 100%;
 		&:nth-of-type(1) {
 			margin-right: 0;
 		}

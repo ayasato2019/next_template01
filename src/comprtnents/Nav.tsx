@@ -18,9 +18,9 @@ export default function Nav() {
 				</Link>
 			</li>
 			<li className={styles.nav__item}>
-				<Link href="/blog">
-					開発ブログ
-					<span>Blog</span>
+				<Link href="/product">
+					商品例
+					<span>Product</span>
 				</Link>
 			</li>
 			<li>
