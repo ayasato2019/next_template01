@@ -84,8 +84,33 @@ $COLOR_PINK : #F00DA3;
 		}
 	}
 }
+
+.main {
+	padding: 30px;
+	.page__title {
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		line-height: 1;
+		font-size: 24px;
+		letter-spacing: .15em;
+	}
+}
+
 .article {
-	&__title {
-		color: blue;
+	display: flex;
+	align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	list-style: none;
+	&__item {
+		margin-right: 2%;
+		height: 31%;
+		width: 25vmin;
+		&:nth-of-type(1) {
+			margin-right: 0;
+		}
 	}
 }

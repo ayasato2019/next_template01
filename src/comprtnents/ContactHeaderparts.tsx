@@ -9,14 +9,15 @@ export default function Contact() {
 	<ul>
 		<li>
 			<span>MAIL</span>
-			<a href="">メールフォームへ進む</a>
+			<a href="/">メールフォームへ</a>
 		</li>
 		<li>
 			<span>TEL</span>
-			<a href="#"></a>
+			<a href="/">000-000-0000</a>
 		</li>
 		<li>
 			<span>FAX</span>
+			<a href="/">000-000-0000</a>
 		</li>
 	</ul>
 	</div>
