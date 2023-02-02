@@ -1,10 +1,11 @@
 /**-----------------
 	BASE
 *-----------------*/
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans+JP&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
 .body {
-  color: #18101D;
+  color: #43474b;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .header {
@@ -21,24 +22,23 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
-.nav {
+.nav_header {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-between;
   list-style: none;
-  margin-right: 200px;
 }
-.nav__item {
+.nav_header__item {
   padding: 0 16px;
 }
-.nav__item span {
+.nav_header__item span {
   display: block;
   margin-top: 4px;
   font-size: 10px;
   color: #55A4F0;
 }
-.nav a {
+.nav_header a {
   display: block;
 }
 
@@ -46,10 +46,10 @@
   text-decoration: none;
   font-size: 24px;
   line-height: 1;
-  font-family: "M PLUS Rounded 1c";
+  font-family: "Merriweather", serif;
 }
 .logoDescription {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-size: 10px;
 }
 
@@ -81,7 +81,7 @@
 }
 .nav__contact li span {
   line-height: 1;
-  padding: 5px;
+  padding: 3px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   letter-spacing: 0.1em;
   font-size: 10px;
@@ -95,6 +95,7 @@
 }
 .main .page__title {
   position: relative;
+  margin-top: 100px;
   margin-bottom: 24px;
   padding-bottom: 24px;
   width: 100%;
@@ -117,12 +118,20 @@
 }
 
 .first_view {
-  overflow: hidden;
   position: relative;
-  top: 107px;
-  height: calc(100vh - 257px);
+  height: calc(100vh - 137px);
+}
+.first_view::before {
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  min-width: 50%;
+  height: 80%;
   border-radius: 32px;
-  background: center/cover no-repeat url("../../public/images/23728076_l.jpg");
+  background: center/cover no-repeat url("../../public/images/fig-gd06034183_1920.jpg");
 }
 .first_view__text {
   position: absolute;
@@ -130,11 +139,9 @@
   left: 0;
   transform: translate(0, -50%);
   padding: 48px;
-  border-radius: 0 8px 8px 0;
   background-color: #FFF;
   line-height: 2;
   font-size: 28px;
-  color: #43474b;
   font-family: "M PLUS Rounded 1c";
 }
 .first_view__text span {
@@ -169,7 +176,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: 48px;
-  background-color: #43474b;
   padding: 8px;
   width: 100px;
   text-align: center;
@@ -181,4 +187,37 @@
   padding: 8px;
   text-align: left;
   line-height: 1;
+}
+
+.footer {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px;
+  width: 100%;
+  height: auto;
+  background-color: #D9D9D9;
+}
+.footer .logo {
+  font-size: 16px;
+}
+.footer .logoDescription {
+  margin-bottom: 6px;
+  font-size: 10px;
+}
+
+.nav_footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav_footer__item {
+  padding: 0 16px;
+}
+.nav_footer a {
+  display: block;
+  font-size: 12px;
 }

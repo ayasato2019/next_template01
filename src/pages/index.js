@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { client } from "../libs/client";
 import Header from '../comprtnents/Header';
+import Footer from '../comprtnents/Footer';
 import { Typography } from '@mui/material';
 import styles from '../styles/Home.module.scss';
 
@@ -24,8 +25,8 @@ return (
 		<main className={styles.main}>
 			<div className={styles.first_view}>
 				<p className={styles.first_view__text}>
-					<span>御社のヒット商品を支える<br />パートナーになりたい</span>
-					水産加工のことなら
+					<span>作るって楽しい<br />食べるって嬉しい</span>
+					毎月出会う、新しいアレンジパン
 				</p>
 			</div>
 			<section>
@@ -45,9 +46,9 @@ return (
 				</li>
 			))}
 		</ul>
-
 			</section>
 		</main>
+		<Footer />
 	</>
 );
 }
