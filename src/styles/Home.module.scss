@@ -198,6 +198,7 @@ $COLOR_PINK : #F00DA3;
 				line-height: 1;
 				color: #FFF;
 				font-size: 12px;
+				background-color: #55A4F0;
 			}
 			h3 {
 				padding: 8px;
@@ -210,14 +211,13 @@ $COLOR_PINK : #F00DA3;
 
 .footer {
 	position: static;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	display: block;
 	padding: 24px;
 	width: 100%;
 	height: auto;
 	background-color: $COLOR_GRAY_L;
 	.logo{
+		margin-bottom: 12px;
 		font-size: 16px;
 		&Description {
 			margin-bottom: 6px;
@@ -234,6 +234,12 @@ $COLOR_PINK : #F00DA3;
 	// margin-right: 200px;
 	&__item {
 		padding: 0 16px;
+		&:nth-of-type(1){
+			padding-left: 0;
+		}
+		&:nth-last-of-type(1){
+			padding-right: 0;
+		}
 	}
 	a{
 		display: block;

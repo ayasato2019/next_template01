@@ -7,6 +7,11 @@ export default function Nav() {
 		<ul className={styles.nav_footer}>
 			<li className={styles.nav_footer__item}>
 				<Link href="/company">
+					Make it!ってなに？
+				</Link>
+			</li>
+			<li className={styles.nav_footer__item}>
+				<Link href="/company">
 					運営会社について
 				</Link>
 			</li>
@@ -23,6 +28,21 @@ export default function Nav() {
 			<li className={styles.nav_footer__item}>
 				<Link href="/product">
 					商品例
+				</Link>
+			</li>
+			<li className={styles.nav_footer__item}>
+				<Link href="/cancel_skip">
+					キャンセル・スキップについて
+				</Link>
+			</li>
+			<li className={styles.nav_footer__item}>
+				<Link href="/delivery">
+					配送方法
+				</Link>
+			</li>
+			<li className={styles.nav_footer__item}>
+				<Link href="/privacy">
+					プライバシーポリシー
 				</Link>
 			</li>
 			<li className={styles.nav_footer__item}>
