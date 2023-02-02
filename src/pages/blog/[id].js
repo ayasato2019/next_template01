@@ -1,16 +1,29 @@
 import { client } from "../../libs/client";
+import Head from 'next/head';
+import Header from '../../comprtnents/Header';
+import styles from '../../styles/News.module.scss';
 
 export default function BlogId({ blog }) {
   return (
-    <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
-        }}
-      />
-    </main>
+	<>
+	<Head>
+		{/* <title>{props.query.photo_id}|{props.query.brandName}</title> */}
+		<title></title>
+		<meta propety='discription' content='キーワード＆ページタイトル'></meta>
+		<meta propety='og:title' content='ページタイトル'></meta>
+	</Head>
+	<Header />
+
+	<main className={styles.article}>
+		<h1 className={styles.article__title}>{blog.title}</h1>
+		<p className={styles.article__time}>{blog.publishedAt}</p>
+		<div  className={styles.articles__contents}
+			dangerouslySetInnerHTML={{
+				__html: `${blog.body}`,
+			}}
+			/>
+	</main>
+		</>
   );
 }
 

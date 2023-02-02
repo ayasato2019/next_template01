@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+///////////////////////////////////
+//COLOR
+///////////////////////////////////
+$COLOR_BLACK : #18101D;
+$COLOR_GRAY_L : #D9D9D9;
+$COLOR_GRAY_D : #43474b;
+$COLOR_BULE_1 : #0246A7;
+$COLOR_BULE_2 : #55A4F0;
+$COLOR_YELLOW : #FFEA2E;
+$COLOR_RED : #F0440D;
+$COLOR_PINK : #F00DA3;
+
+/**-----------------
+	BASE
+*-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+.article {
+	padding: 126px 24px 48px;
+	&__title {
+		position: relative;
+		font-size: 36px;
+		padding-bottom: 12px;
+		margin-bottom: 48px;
+		&::before {
+			content: "";
+			position: absolute;
+			bottom:0;
+			left: 0;;
+			display: block;
+			width: 81px;
+			height: 3px;
+			border-radius: 3px;
+			background-color: $COLOR_BULE_1;
+		}
+	}
+	&__time {
+		margin-bottom: 16px;
+		font-size: 12px;
+		color: $COLOR_GRAY_D;
+	}
+	&__contents {
+		line-height: 1.6;
+	}
+}

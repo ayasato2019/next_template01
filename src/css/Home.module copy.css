@@ -1,0 +1,32 @@
+/**-----------------
+	BASE
+*-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+.article {
+  padding: 24px;
+}
+.article__title {
+  position: relative;
+  font-size: 36px;
+  padding-bottom: 12px;
+  margin-bottom: 48px;
+}
+.article__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 81px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #0246A7;
+}
+.article__time {
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: #43474b;
+}
+.article__contents {
+  line-height: 1.6;
+}

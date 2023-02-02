@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { client } from "../libs/client";
 import Header from '../comprtnents/Header';
-// import { StylesProvider } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import styles from '../styles/Home.module.scss';
 
 // import { fetcher } from '@/comprtnents/CommonMeta';
@@ -23,10 +23,15 @@ return (
 		<Header />
 		<main className={styles.main}>
 			<div className={styles.first_view}>
-				
+				<p className={styles.first_view__text}>
+					<span>御社のヒット商品を支える<br />パートナーになりたい</span>
+					水産加工のことなら
+				</p>
 			</div>
 			<section>
 				<h1 className={styles.page__title}>About me?</h1>
+				{/* <Typography variant="h1">Hello World!</Typography> */}
+
 			</section>
 			<section>
 				<h1 className={styles.page__title}>News</h1>
