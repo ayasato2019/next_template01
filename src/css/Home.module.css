@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans+JP&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
 .body {
+  overflow-x: hidden;
   color: #43474b;
   font-family: "Noto Sans JP", sans-serif;
 }
