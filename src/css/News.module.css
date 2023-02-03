@@ -28,10 +28,10 @@
   font-size: 12px;
   color: #43474b;
 }
-.article__contents p {
+.article p {
   line-height: 1.6;
 }
-.article__contents a {
+.article a {
   text-decoration: underline;
   color: #F00DA3;
 }

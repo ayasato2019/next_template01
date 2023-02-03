@@ -1,12 +1,15 @@
 import Link from "next/link";
 import styles from '../styles/Home.module.scss';
 import ContactParts from './ContactHeaderparts'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCroissant } from '@fortawesome/free-solid-svg-icons';
 
 export default function Nav() {
 	return (
 		<ul className={styles.nav_header}>
 			<li className={styles.nav_header__item}>
 				<Link href="/about">
+				<FontAwesomeIcon icon={faCroissant} />
 					Make it!について
 					<span>About</span>
 				</Link>
