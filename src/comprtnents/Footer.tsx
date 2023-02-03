@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
+import Link from "next/link";
 import type { AppProps } from 'next/app'
-import Nav from './NavFooter';
 import styles from '../styles/Home.module.scss';
 
 import { css } from '@emotion/react'
@@ -14,7 +14,58 @@ export default function Footer() {
 				<p className={styles.logoDescription}>こだわり手作りパンのサブスク</p>
 				<p className={styles.logo}>Make it!</p>
 			</a>
-			<Nav />
+			<nav>
+				<ul className={styles.nav_footer}>
+					<li className={styles.nav_footer__item}>
+						<Link href="/company">
+							Make it!ってなに？
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/company">
+							運営会社について
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/service">
+							サービスについて
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/system">
+							システム
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/product">
+							商品例
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/cancel_skip">
+							キャンセル・スキップについて
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/delivery">
+							配送方法
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/privacy">
+							プライバシーポリシー
+						</Link>
+					</li>
+					<li className={styles.nav_footer__item}>
+						<Link href="/contact">
+							お問合せ
+						</Link>
+					</li>
+					{/* <li>
+						<ContactParts />
+					</li> */}
+				</ul>
+			</nav>
 		</footer>
 	);
 }

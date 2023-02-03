@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { client } from "../libs/client";
 import Header from '../comprtnents/Header';
 import Footer from '../comprtnents/Footer';
-import ShopNav from '../comprtnents/ShopNav';
 import styles from '../styles/Home.module.scss';
 // import { fetcher } from '@/comprtnents/CommonMeta';
 
@@ -25,7 +24,7 @@ return (
 			<meta propety='discription' content='キーワード＆ページタイトル'></meta>
 			<meta propety='og:title' content='ページタイトル'></meta>
 		</Head>
-		<ShopNav />
+
 		<Header />
 		<main className={styles.main}>
 			<div className={styles.first_view}>

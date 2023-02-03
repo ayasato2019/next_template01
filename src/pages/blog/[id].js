@@ -2,7 +2,7 @@ import { client } from "../../libs/client";
 import Head from 'next/head';
 import Header from '../../comprtnents/Header';
 import styles from '../../styles/News.module.scss';
-import ShopNav from '../../comprtnents/ShopNav';
+import ShopNav from '../../comprtnents/UserInfo';
 
 export default function BlogId({ blog }) {
   return (
@@ -13,7 +13,6 @@ export default function BlogId({ blog }) {
 		<meta propety='discription' content='キーワード＆ページタイトル'></meta>
 		<meta propety='og:title' content='ページタイトル'></meta>
 	</Head>
-	<ShopNav />
 	<Header />
 
 	<main className={styles.article}>

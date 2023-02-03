@@ -1,8 +1,10 @@
 import styles from '../styles/Home.module.scss';
+import{ css } from '@emotion/react'
+
 
 export default function ShopNav() {
 	return (
-		<div className={styles.shopnNav}>
+		<div className={styles['p-userInfo']}>
 			<ul>
 				<li>
 					<p>ようこそ〇〇さん！</p>
