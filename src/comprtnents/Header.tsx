@@ -2,10 +2,7 @@
 import type { AppProps } from 'next/app'
 import Nav from './NavHeader';
 import styles from '../styles/Home.module.scss';
-
 import { css } from '@emotion/react'
-
-
 
 export default function Header() {
 	return (
@@ -15,6 +12,7 @@ export default function Header() {
 				<p className={styles.logo}>Make it!</p>
 			</a>
 			<Nav />
+			
 		</header>
 	);
 }

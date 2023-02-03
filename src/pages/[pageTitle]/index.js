@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Head from 'next/head';
 import Header from '../../comprtnents/Header';
 import styles from '../../styles/Home.module.scss';
+import ShopNav from '../../comprtnents/ShopNav';
 
 export default function Setting({ query }) {
 	const router = useRouter();
@@ -14,6 +15,7 @@ export default function Setting({ query }) {
 			<meta propety='discription' content='キーワード＆ページタイトル'></meta>
 			<meta propety='og:title' content='ページタイトル'></meta>
 		</Head>
+		<ShopNav />
 		<Header />
 			<main className={styles.main}>
 				<h1 className={styles.page__title}>{router.query.pageTitle}</h1>
