@@ -77,7 +77,6 @@ $bp-sp : 768px;
 }
 
 .l-header {
-	overflow: hidden;
 	position: fixed;
 	top:0;
 	left: 0;
@@ -92,33 +91,61 @@ $bp-sp : 768px;
     -webkit-backdrop-filter: blur(10px);
 	@include breakPoint(sp){
 		flex-wrap: wrap;
-		top: 60px;
 	}
 }
 
-.p-headerLogoNav {
+.l-header-logo-nav__wrap {
 	display: flex;
 	height: 65px;
 	justify-content: space-between;
 	align-items: flex-end;
 	padding: $SPACE_S $SPACE_M;
-	.c-headerlogo-link{
+	.p-headerlogo__link{
 		display: block;
+		.c-logo{
+			text-decoration: none;
+			font-size: 24px;
+			line-height: 1;
+			font-family: 'Merriweather', serif;
+		}
+		.c-logo-description{
+			margin-bottom: $SPACE_SS;
+			font-size: 10px;
+		}
 	}
-	.c-logo{
-		text-decoration: none;
-		font-size: 24px;
-		line-height: 1;
-		font-family: 'Merriweather', serif;
+}
+.l-header-nav__wrap {
+	margin-left: 30px;
+	width: auto;
+	@include breakPoint(sp) {
+		display: block;
+		height: 30px;
+		width: 30px;
 	}
-	.c-logo-description{
-		margin-bottom: $SPACE_SS;
-		font-size: 10px;
+}
+.p-header-nav__trigger {
+	display: none;
+	@include breakPoint(sp) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: column;
+		height: 30px;
+		width: 30px;
+	}
+	span {
+		display: none;
+		@include breakPoint(sp) {
+			display: block;
+			border-radius: 3px;
+			height: 3px;
+			width: 30px;
+			background-color: $COLOR_BLACK;
+		}
 	}
 }
 
-.p-header-nav-contents{
-	position: relative;
+.l-header-nav__contents {
 	display: flex;
 	align-items: center;
 	align-content: center;
@@ -126,21 +153,38 @@ $bp-sp : 768px;
 	width: 100%;
 	list-style: none;
 	font-size: 14px;
-	.c-header-nav-contents-item {
+	@include breakPoint(sp) {
+		position: absolute;
+		right: 100%;
+		top: 100px;
+		flex-direction: column;
+		justify-content: space-around;
+		z-index: 10;
+		height: calc(100vh - 100px);
+		width: 80%;
+		background-color: #fff;
+		border: 1px solid $COLOR_BULE_2;
+		border-radius: 24px 0 0 24px;
+	}
+	.p-header-nav__contents-item {
 		padding: 0 16px;
-		span{
-			display: block;
-			margin-top: 4px;
-			font-size: 10px;
-			color: $COLOR_BULE_2;
+		.c-header-nav__contents-item-link{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			span{
+				display: block;
+				margin-top: 4px;
+				font-size: 10px;
+				color: $COLOR_BULE_2;
+			}
 		}
 	}
-	.c-header-nav-contents-item-link{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-	}
+}
+
+.p-header-nav__trigger:checked + .l-header-nav__contents {
+	right: 0;
 }
 
 .p-userInfo{
@@ -159,43 +203,6 @@ $bp-sp : 768px;
 	font-size: 12px;
 	color: #FFF;
 	line-height: 1;
-	.c-menu-trigger,
-	.c-menu-trigger span {
-	display: inline-block;
-	transition: all .4s;
-	box-sizing: border-box;
-	}
-	.c-menu-trigger {
-	position: relative;
-	width: 50px;
-	height: 44px;
-	background: none;
-	border: none;
-	appearance: none;
-	cursor: pointer;
-	}
-	.c-menu-trigger span {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	background-color: #fff;
-	border-radius: 4px;
-	}
-	.c-menu-trigger span:nth-of-type(1) {
-	top: 0;
-	}
-	.c-menu-trigger span:nth-of-type(2) {
-	top: 20px;
-	}
-	.c-menu-trigger span:nth-of-type(3) {
-	bottom: 0;
-	}
-	@include breakPoint(sp){
-		flex-wrap: wrap;
-		height: 60px;
-		line-height: 1.4;
-	}
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -217,37 +224,3 @@ $bp-sp : 768px;
 		}
 	}
 }
-
-// .nav__contact{
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	display: block;
-// 	padding: 15px;
-// 	width: 200px;
-// 	height: auto;
-// 	background-color: $COLOR_BULE_2;
-// 	color:#fff;
-// 	h3 {
-// 		margin-bottom: 8px;
-// 		padding-bottom: 8px;
-// 		border-bottom: 1px dotted #FFF;
-// 		line-height: 1;
-// 	}
-// 	li {
-// 		margin-bottom: 8px;
-// 		a{
-// 			display: inline-block;
-// 			margin-left: 8px;
-// 			line-height: 1;
-// 			font-size: 12px;
-// 		}
-// 		span{
-// 			line-height: 1;
-// 			padding: 3px;
-// 			border: 1px solid rgba(255,255,255, .6);
-// 			letter-spacing: .1em;
-// 			font-size: 10px;
-// 		}
-// 	}
-// }

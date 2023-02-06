@@ -48,7 +48,7 @@
 		width: 50vw;
 		height: calc(100% - 60px);
 		border-radius: 32px;
-		background: center / cover no-repeat url('../../public/images/dough-943245_1920.jpg');
+		background: url('../../public/images/dough-943245_1920.jpg') center / cover no-repeat;
 	}
 	&::after{
 		content: "";

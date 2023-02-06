@@ -1,5 +1,156 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans+JP&display=swap");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c");
+.body {
+  overflow-x: hidden;
+  color: #43474b;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.l-header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 105px;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+@media only screen and (max-width: 768px) {
+  .l-header {
+    flex-wrap: wrap;
+    top: 60px;
+  }
+}
+
+.p-headerLogoNav {
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 12px 24px;
+}
+.p-headerLogoNav .c-headerlogo-link {
+  display: block;
+}
+.p-headerLogoNav .c-logo {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Merriweather", serif;
+}
+.p-headerLogoNav .c-logo-description {
+  margin-bottom: 6px;
+  font-size: 10px;
+}
+
+.p-header-nav-contents {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  font-size: 14px;
+}
+.p-header-nav-contents .c-header-nav-contents-item {
+  padding: 0 16px;
+}
+.p-header-nav-contents .c-header-nav-contents-item span {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #55A4F0;
+}
+.p-header-nav-contents .c-header-nav-contents-item-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.p-userInfo {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  padding: 9px 24px;
+  z-index: 10;
+  background-color: #55A4F0;
+  height: 30px;
+  width: 100%;
+  font-size: 12px;
+  color: #FFF;
+  line-height: 1;
+}
+.p-userInfo .c-menu-trigger,
+.p-userInfo .c-menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+.p-userInfo .c-menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+.p-userInfo .c-menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.p-userInfo .c-menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.p-userInfo .c-menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+.p-userInfo .c-menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .p-userInfo {
+    flex-wrap: wrap;
+    height: 60px;
+    line-height: 1.4;
+  }
+}
+.p-userInfo ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.p-userInfo ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-right: 30px;
+}
+.p-userInfo ul li a {
+  height: 100%;
+  width: 100%;
+  margin-left: 5px;
+  text-decoration: underline;
+  color: #D9D9D9;
+}
+
 /**-----------------
 	Homepage contents
 *-----------------*/
@@ -47,7 +198,7 @@
   width: 50vw;
   height: calc(100% - 60px);
   border-radius: 32px;
-  background: center/cover no-repeat url("../../public/images/dough-943245_1920.jpg");
+  background: url("../../public/images/dough-943245_1920.jpg") center/cover no-repeat;
 }
 .first_view::after {
   content: "";
