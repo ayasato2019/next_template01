@@ -1,26 +1,29 @@
+import React from 'react';
 import styles from '../styles/Home.module.scss';
 import{ css } from '@emotion/react'
 
+const userProfile = {
+	name: "太郎",
+	dataNext: "2022/02/02",
+	dataChange: "2022/01/02",
+	course: "1/4コース",
+};
 
 export const UserInfo = () => {
 	return (
 		<div className={styles['p-userInfo__wrap']}>
 			<ul>
 				<li className={styles['c-userinfo__name']}>
-					<p>ようこそ〇〇さん！</p>
+					<p>ようこそ<span>{userProfile.name}</span>さん！</p>
 				</li>
-				<li className={styles['c-userinfo__cpirse']}>
-					<p>Bacic</p>
+				<li className={styles['c-userinfo__course']}>
+					<p><span>{userProfile.course}</span></p>
 				</li>
 				<li className={styles['c-userinfo__delivary-data']}>
-					<p>次回配送予定日：00/00</p>
-				</li>
-				<li className={styles['c-userinfo__delivary-data-cahnge']}>
-					<p>配送変更期限：00/00</p>
-					<p>変更は<a href="#">こちら</a></p>
+					<p><span>{userProfile.dataNext}</span></p>
 				</li>
 			</ul>
-			<p><a href="#">マイページへ</a></p>
+			<a href="#" className={styles['c-userinfo__to-maypage']}>マイページへ</a>
 		</div>
 	);
 }

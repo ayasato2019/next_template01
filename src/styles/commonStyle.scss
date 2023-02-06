@@ -211,7 +211,6 @@ $bp-sp : 768px;
 		li{
 			display: flex;
 			flex-direction: row;
-			// justify-content: space-between;
 			flex-wrap: nowrap;
 			margin-right: 30px;
 			a {
@@ -222,5 +221,25 @@ $bp-sp : 768px;
 				color: $COLOR_GRAY_L;
 			}
 		}
+		.c-userinfo__course {
+			&::before{
+				content: "現在のコース：";
+			}
+		}
+		.c-userinfo__delivary-data {
+			&::before{
+				content: "次回配送日：";
+			}
+		}
+		@include breakPoint(sp) {
+			.c-userinfo__course,
+			.c-userinfo__delivary-data,
+			.c-userinfo__delivary-data-cahnge{
+				display: none;
+			}
+		}
+	}
+	.c-userinfo__to-maypage {
+		text-decoration: underline;
 	}
 }
