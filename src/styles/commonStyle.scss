@@ -183,11 +183,11 @@ $bp-sp : 768px;
 	}
 }
 
-.p-header-nav__trigger:checked + .l-header-nav__contents {
+.open {
 	right: 0;
 }
 
-.p-userInfo{
+.p-userInfo__wrap {
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;

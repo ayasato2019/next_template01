@@ -2,20 +2,20 @@ import styles from '../styles/Home.module.scss';
 import{ css } from '@emotion/react'
 
 
-export default function ShopNav() {
+export const UserInfo = () => {
 	return (
-		<div className={styles['p-userInfo']}>
+		<div className={styles['p-userInfo__wrap']}>
 			<ul>
-				<li>
+				<li className={styles['c-userinfo__name']}>
 					<p>ようこそ〇〇さん！</p>
 				</li>
-				<li>
-					<p>ランク：Bacic</p>
+				<li className={styles['c-userinfo__cpirse']}>
+					<p>Bacic</p>
 				</li>
-				<li>
+				<li className={styles['c-userinfo__delivary-data']}>
 					<p>次回配送予定日：00/00</p>
 				</li>
-				<li>
+				<li className={styles['c-userinfo__delivary-data-cahnge']}>
 					<p>配送変更期限：00/00</p>
 					<p>変更は<a href="#">こちら</a></p>
 				</li>
