@@ -12,11 +12,11 @@
 	a {
 		text-decoration: underline;
 		color: $COLOR_PINK;
-		// &::after {
-			
-			// }
-		}
 	}
+	&.l-main {
+		min-height: calc(100vh - 134px);
+	}
+}
 .c-article__title {
 	position: relative;
 	font-size: 36px;

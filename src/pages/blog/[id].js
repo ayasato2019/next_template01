@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../../comprtnents/Header';
 import Footer from '../../comprtnents/Footer';
 import styles from '../../styles/News.module.scss';
+import commonStyles from '../../styles/Home.module.scss';
 import ShopNav from '../../comprtnents/UserInfo';
 
 export default function BlogId({ blog }) {
@@ -15,7 +16,7 @@ export default function BlogId({ blog }) {
 		<meta propety='og:title' content='ページタイトル'></meta>
 	</Head>
 	<Header />
-	<main className={`${styles['l-main']} ${styles['p-article']}`}>
+	<main className={`${commonStyles['l-main']} ${styles['p-article']}`}>
 		<h1 className={styles['c-article__title']}>{blog.title}</h1>
 		<p className={styles['c-article__time']}>{blog.publishedAt}</p>
 		<div className={styles['c-article__contents']}
