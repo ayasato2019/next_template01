@@ -15,8 +15,7 @@ export default function BlogId({ blog }) {
 		<meta propety='og:title' content='ページタイトル'></meta>
 	</Head>
 	<Header />
-
-	<main className={styles['p-article']}>
+	<main className={`${styles['l-main']} ${styles['p-article']}`}>
 		<h1 className={styles['c-article__title']}>{blog.title}</h1>
 		<p className={styles['c-article__time']}>{blog.publishedAt}</p>
 		<div className={styles['c-article__contents']}
