@@ -7,9 +7,9 @@
 
 .l-main {
 	padding: 105px 24px 24px;
-	min-height: calc(100vh - 172px);
+	min-height: calc(100vh - 132px);
 	@include breakPoint(sp) {
-		min-height: calc(100vh - 210px);
+		min-height: calc(100vh - 170px);
 	}
 	section {
 		position: static;

@@ -249,9 +249,6 @@
   text-decoration: underline;
   color: #F00DA3;
 }
-.p-article.l-main {
-  min-height: calc(100vh - 134px);
-}
 
 .c-article__title {
   position: relative;

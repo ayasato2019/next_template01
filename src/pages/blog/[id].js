@@ -7,27 +7,29 @@ import commonStyles from '../../styles/Home.module.scss';
 import ShopNav from '../../comprtnents/UserInfo';
 
 export default function BlogId({ blog }) {
-  return (
-	<>
-	<Head>
-		{/* <title>{props.query.photo_id}|{props.query.brandName}</title> */}
-		<title></title>
-		<meta propety='discription' content='キーワード＆ページタイトル'></meta>
-		<meta propety='og:title' content='ページタイトル'></meta>
-	</Head>
-	<Header />
-	<main className={`${commonStyles['l-main']} ${styles['p-article']}`}>
-		<h1 className={styles['c-article__title']}>{blog.title}</h1>
-		<p className={styles['c-article__time']}>{blog.publishedAt}</p>
-		<div className={styles['c-article__contents']}
-			dangerouslySetInnerHTML={{
-				__html: `${blog.body}`,
-			}}
-			/>
-	</main>
-	<Footer />
-	</>
-  );
+	const date = new Date(blog.publishedAt).toLocaleDateString();
+
+	return (
+		<>
+		<Head>
+			{/* <title>{props.query.photo_id}|{props.query.brandName}</title> */}
+			<title></title>
+			<meta propety='discription' content='キーワード＆ページタイトル'></meta>
+			<meta propety='og:title' content='ページタイトル'></meta>
+		</Head>
+		<Header />
+		<main className={`${commonStyles['l-main']} ${styles['p-article']}`}>
+			<h1 className={styles['c-article__title']}>{blog.title}</h1>
+			<p className={styles['c-article__time']}>{date}</p>
+			<div className={styles['c-article__contents']}
+				dangerouslySetInnerHTML={{
+					__html: `${blog.body}`,
+				}}
+				/>
+		</main>
+		<Footer />
+		</>
+	);
 }
 
 // 静的生成のためのパスを指定します
