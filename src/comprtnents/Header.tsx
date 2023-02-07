@@ -4,8 +4,7 @@ import Link from "next/link";
 import styles from '../styles/Home.module.scss';
 import { UserInfo } from './UserInfo';
 import { HeaderNav } from './Nav-Header';
-import { ToggleButton } from './ToggleButton';
-import { css } from '@emotion/react'
+
 
 export default function Header() {
 	return (
@@ -17,8 +16,8 @@ export default function Header() {
 					<p className={styles['c-logo']}>Make it!</p>
 				</a>
 				<nav className={styles['l-header-nav__wrap']}>
-					<ToggleButton />
-					<HeaderNav />
+					{/* <ToggleButton /> */}
+					<HeaderNav/>
 				</nav>
 			</div>
 		</header>

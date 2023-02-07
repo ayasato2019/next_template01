@@ -1,16 +1,26 @@
 import Link from "next/link";
 import styles from '../styles/Home.module.scss';
-import React, { FC } from "react";
-
-// type Props = {
-// 	open: boolean;
-// 	id: string;
-// };
+import React, { FC, useState } from "react";
 
 export const HeaderNav = () => {
+	
+	const [openMenu, setOpenMenu] = useState(false);
+	const handleMenuOpen = () => {
+	setOpenMenu(!openMenu);
+	};
 
 	return (
-		<ul className={styles['l-header-nav__contents']}>
+		<>
+		<button onClick={handleMenuOpen} type="button" className={styles['p-header-nav__trigger']}
+		>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<ul className={
+			openMenu ? styles['l-header-nav__contents-open']
+			: styles['l-header-nav__contents']
+		}>
 			<li className={styles['p-header-nav__contents-item']}>
 				<Link href="/about" className={styles['c-header-nav__contents-item-link']}>
 					Make it!について
@@ -48,5 +58,6 @@ export const HeaderNav = () => {
 				</Link>
 			</li>
 		</ul>
+	</>
 	);
 }
