@@ -17,9 +17,9 @@ export default function Setting({ query }) {
 			<meta propety='og:title' content='ページタイトル'></meta>
 		</Head>
 		<Header />
-			<main className={styles.main}>
-				<h1 className={styles.page__title}>{router.query.pageTitle}</h1>
-				<p>動的に生成される下層ページ</p>
+			<main className={styles['l-main']}>
+				<h1 className={styles['c-page__title']}>{router.query.pageTitle}</h1>
+				<p className={styles['c-page__text']}>動的に生成される下層ページ</p>
 			</main>
 		<Footer />
 		</>

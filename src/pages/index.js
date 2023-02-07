@@ -26,23 +26,23 @@ return (
 		</Head>
 
 		<Header />
-		<main className={styles.main}>
-			<div className={styles.first_view}>
-				<p className={styles.first_view__text}>
+		<main className={styles['l-main']}>
+			<div className={styles['l-first-view']}>
+				<p className={styles['l-first-view__text']}>
 					<span>作るって楽しい<br />食べるって嬉しい</span>
 					毎月出会う、新しいアレンジパン
 				</p>
 			</div>
 			<section>
-				<h1 className={styles.page__title}>What 『Make it!』?</h1>
-				<figure className={styles.top_main_section_whatMakeIt_figure}>
+				<h1 className={styles['c-page__title']}>What 『Make it!』?</h1>
+				<figure className={styles['p-toppage__whatMakeIt-figure']}>
 					<Image
 					src="/images/bread-725873_1920.jpg"
 					alt="こだわりパンを自分で作ってみる"
 					width={1980}
 					height={1150}
 					sizes="100%"
-					className={styles.top_main_section_whatMakeIt_img}
+					className={styles['c-toppage__whatMakeIt-img']}
 					/>
 					<figcaption>
 						<ul>
@@ -55,10 +55,10 @@ return (
 				</figure>
 			</section>
 			<section>
-				<h1 className={styles.page__title}>News</h1>
-				<ul className={styles.news}>
+				<h1 className={styles['c-page__title']}>News</h1>
+				<ul className={styles['p-news']}>
 			{blog.map((blog) => (
-				<li key={blog.id} className={styles.news__item}>
+				<li key={blog.id} className={styles['p-news__item']}>
 					<Link href={`/blog/${blog.id}`}>
 						<p>{blog.category && blog.category.name}</p>
 						<h3>{blog.title}</h3>

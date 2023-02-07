@@ -4,29 +4,8 @@
 /**-----------------
 	News
 *-----------------*/
-.article {
+.p-article {
 	padding: 126px 24px 48px;
-	&__title {
-		position: relative;
-		font-size: 36px;
-		padding-bottom: 12px;
-		margin-bottom: 48px;
-		&::before {
-			content: "";
-			position: absolute;
-			bottom:0;
-			left: 0;;
-			display: block;
-			width: 81px;
-			height: 3px;
-			border-radius: 3px;
-			background-color: $COLOR_BULE_1;
-		}
-	}
-	&__time {
-		margin-bottom: 16px;
-		font-size: 12px;
-	}
 	p{
 		line-height: 1.6;
 	}
@@ -35,6 +14,27 @@
 		color: $COLOR_PINK;
 		// &::after {
 			
-		// }
+			// }
+		}
 	}
+.c-article__title {
+	position: relative;
+	font-size: 36px;
+	padding-bottom: 12px;
+	margin-bottom: 48px;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom:0;
+		left: 0;;
+		display: block;
+		width: 81px;
+		height: 3px;
+		border-radius: 3px;
+		background-color: $COLOR_BULE_1;
+	}
+}
+.c-article__time {
+	margin-bottom: 16px;
+	font-size: 14px;
 }

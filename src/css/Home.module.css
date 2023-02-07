@@ -239,18 +239,19 @@
 /**-----------------
 	Homepage contents
 *-----------------*/
-.main {
+.l-main {
   padding: 105px 24px 24px;
+  min-height: calc(100vh - 172px);
 }
 @media only screen and (max-width: 768px) {
-  .main {
+  .l-main {
     min-height: calc(100vh - 210px);
   }
 }
-.main section {
+.l-main section {
   position: static;
 }
-.main .page__title {
+.l-main .c-page__title {
   position: relative;
   margin-top: 100px;
   margin-bottom: 24px;
@@ -261,7 +262,7 @@
   font-size: 24px;
   letter-spacing: 0.15em;
 }
-.main .page__title::before {
+.l-main .c-page__title::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -273,12 +274,15 @@
   border-radius: 3px;
   background-color: #0246A7;
 }
+.l-main .c-page__text {
+  text-align: center;
+}
 
-.first_view {
+.l-first-view {
   position: relative;
   height: calc(100vh - 135px);
 }
-.first_view::before {
+.l-first-view::before {
   content: "";
   overflow: hidden;
   position: absolute;
@@ -291,12 +295,12 @@
   background: url("../../public/images/dough-943245_1920.jpg") center/cover no-repeat;
 }
 @media only screen and (max-width: 768px) {
-  .first_view::before {
+  .l-first-view::before {
     bottom: calc(50% - 30px);
     height: calc(50% - 60px);
   }
 }
-.first_view::after {
+.l-first-view::after {
   content: "";
   overflow: hidden;
   position: absolute;
@@ -308,7 +312,7 @@
   border-radius: 32px;
   background: center/cover no-repeat url("../../public/images/bread-2193537_1920.jpg");
 }
-.first_view__text {
+.l-first-view__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -321,22 +325,22 @@
   z-index: 1;
 }
 @media only screen and (max-width: 768px) {
-  .first_view__text {
+  .l-first-view__text {
     padding: 24px;
     font-size: 18px;
   }
 }
-.first_view__text span {
+.l-first-view__text span {
   display: block;
   font-size: 36px;
 }
 @media only screen and (max-width: 768px) {
-  .first_view__text span {
+  .l-first-view__text span {
     font-size: 24px;
   }
 }
 
-.top_main_section_whatMakeIt_figure {
+.p-toppage__whatMakeIt-figure {
   overflow: hidden;
   position: relative;
   display: flex;
@@ -347,22 +351,22 @@
   width: 100vw;
 }
 @media only screen and (max-width: 768px) {
-  .top_main_section_whatMakeIt_figure {
+  .p-toppage__whatMakeIt-figure {
     flex-direction: column;
   }
 }
-.top_main_section_whatMakeIt_figure .top_main_section_whatMakeIt_img {
+.p-toppage__whatMakeIt-figure .c-toppage__whatMakeIt-img {
   color: transparent;
   width: 33%;
   height: auto;
 }
 @media only screen and (max-width: 768px) {
-  .top_main_section_whatMakeIt_figure .top_main_section_whatMakeIt_img {
+  .p-toppage__whatMakeIt-figure .c-toppage__whatMakeIt-img {
     width: 100%;
     height: auto;
   }
 }
-.top_main_section_whatMakeIt_figure::before {
+.p-toppage__whatMakeIt-figure::before {
   content: "";
   position: absolute;
   top: 0;
@@ -374,7 +378,7 @@
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 @media only screen and (max-width: 768px) {
-  .top_main_section_whatMakeIt_figure::before {
+  .p-toppage__whatMakeIt-figure::before {
     top: 0;
     left: -10%;
     display: block;
@@ -382,19 +386,19 @@
     height: 100%;
   }
 }
-.top_main_section_whatMakeIt_figure figcaption {
+.p-toppage__whatMakeIt-figure figcaption {
   margin-left: 120px;
 }
 @media only screen and (max-width: 768px) {
-  .top_main_section_whatMakeIt_figure figcaption {
+  .p-toppage__whatMakeIt-figure figcaption {
     margin: 0 12px 0 20%;
   }
 }
-.top_main_section_whatMakeIt_figure figcaption li {
+.p-toppage__whatMakeIt-figure figcaption li {
   line-height: 2em;
 }
 
-.news {
+.p-news {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,22 +409,22 @@
   width: 100%;
   list-style: none;
 }
-.news__item {
+.p-news__item {
   margin-bottom: 48px;
   min-height: 48px;
   height: auto;
   width: 100%;
 }
-.news__item a {
+.p-news__item a {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
   justify-content: flex-start;
   width: 100%;
   height: 100%;
 }
-.news__item a p {
+.p-news__item a p {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: 12px;
@@ -432,14 +436,14 @@
   font-size: 12px;
   background-color: #55A4F0;
 }
-.news__item a h3 {
+.p-news__item a h3 {
   padding: 8px 0;
   text-align: left;
   line-height: 32px;
   width: calc(100% - 112px);
 }
 @media only screen and (max-width: 768px) {
-  .news__item a h3 {
+  .p-news__item a h3 {
     padding: 3px 0;
     line-height: 20px;
   }

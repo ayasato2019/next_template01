@@ -16,10 +16,10 @@ export default function BlogId({ blog }) {
 	</Head>
 	<Header />
 
-	<main className={styles.article}>
-		<h1 className={styles.article__title}>{blog.title}</h1>
-		<p className={styles.article__time}>{blog.publishedAt}</p>
-		<div className={styles.articles__contents}
+	<main className={styles['p-article']}>
+		<h1 className={styles['c-article__title']}>{blog.title}</h1>
+		<p className={styles['c-article__time']}>{blog.publishedAt}</p>
+		<div className={styles['c-article__contents']}
 			dangerouslySetInnerHTML={{
 				__html: `${blog.body}`,
 			}}
