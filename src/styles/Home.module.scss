@@ -7,6 +7,9 @@
 
 .main {
 	padding: 105px 24px 24px;
+	@include breakPoint(sp) {
+		min-height: calc(100vh - 210px);
+	}
 	section {
 		position: static;
 	}
@@ -189,46 +192,3 @@
 	}
 }
 
-.footer {
-	position: static;
-	display: block;
-	padding: 24px;
-	width: 100%;
-	height: auto;
-	background-color: $COLOR_GRAY_L;
-	.logo{
-		margin-bottom: 12px;
-		font-size: 16px;
-		&Description {
-			margin-bottom: 6px;
-			font-size: 10px;
-		}
-	}
-}
-.nav_footer{
-	display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    list-style: none;
-    justify-content: flex-start;
-    flex-direction: row;
-	list-style: none;
-	// margin-right: 200px;
-	&__item {
-		margin: $SPACE_S 0;
-		padding: 0 16px;
-		white-space: nowrap;
-		&:nth-of-type(1){
-			padding-left: 0;
-		}
-		&:nth-last-of-type(1){
-			padding-right: 0;
-		}
-	}
-	a{
-		display: block;
-		text-align: left;
-		font-size: 12px;
-	}
-}

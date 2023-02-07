@@ -19,6 +19,7 @@ export default function Setting({ query }) {
 		<Header />
 			<main className={styles.main}>
 				<h1 className={styles.page__title}>{router.query.pageTitle}</h1>
+				<p>動的に生成される下層ページ</p>
 			</main>
 		<Footer />
 		</>
