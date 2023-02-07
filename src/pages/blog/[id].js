@@ -1,6 +1,7 @@
 import { client } from "../../libs/client";
 import Head from 'next/head';
 import Header from '../../comprtnents/Header';
+import Footer from '../../comprtnents/Footer';
 import styles from '../../styles/News.module.scss';
 import ShopNav from '../../comprtnents/UserInfo';
 
@@ -24,7 +25,8 @@ export default function BlogId({ blog }) {
 			}}
 			/>
 	</main>
-		</>
+	<Footer />
+	</>
   );
 }
 

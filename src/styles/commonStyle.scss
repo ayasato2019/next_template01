@@ -153,9 +153,10 @@ $bp-sp : 768px;
 	@include breakPoint(sp) {
 		overflow: hidden;
 		position: fixed;
-		// right: -201px;
+		right: -201px;
 		transition: .2s;
 		top: 100px;
+		right: -100%;
 		display: flex;
 		align-items: center;
 		align-content: center;
@@ -170,14 +171,16 @@ $bp-sp : 768px;
 		border-radius: 24px 0 0 24px;
 		box-shadow: 0 4px 12px rgba($COLOR_BLACK, .3);
 		transition: .2s;
+		&.open {
+			transition: .2s;
+			right: -1px;
+		}
+		// &.close {
+		// 	transition: .2s;
+		// 	right: -100%;
+		// }	
 	}
-}
-.open {
-	right: -1px;
-}
-.clouse {
-	right: -201px;
-}
+	}
 // .l-header-nav__contents-open {
 // 	overflow: hidden;
 // 	position: fixed;

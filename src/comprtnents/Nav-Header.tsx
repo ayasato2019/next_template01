@@ -18,7 +18,7 @@ export const HeaderNav = () => {
 			<span></span>
 		</button>
 		<ul
-		className={`${styles['l-header-nav__contents']} ${openMenu ? styles['open'] : styles['clouse']}`
+		className={`${styles['l-header-nav__contents']} ${openMenu ? styles['open'] : undefined}`
 		}>
 			<li className={styles['p-header-nav__contents-item']}>
 				<Link href="/about" className={styles['c-header-nav__contents-item-link']}>

@@ -41,11 +41,8 @@ return (
 					alt="こだわりパンを自分で作ってみる"
 					width={1980}
 					height={1150}
-					sizes="100vw"
-					style={{
-						width: '33%',
-						height: 'auto',
-					}}
+					sizes="100%"
+					className={styles.top_main_section_whatMakeIt_img}
 					/>
 					<figcaption>
 						<ul>

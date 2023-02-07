@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Head from 'next/head';
 import Header from '../../comprtnents/Header';
+import Footer from '../../comprtnents/Footer';
 import styles from '../../styles/Home.module.scss';
 import ShopNav from '../../comprtnents/UserInfo';
 
@@ -19,6 +20,7 @@ export default function Setting({ query }) {
 			<main className={styles.main}>
 				<h1 className={styles.page__title}>{router.query.pageTitle}</h1>
 			</main>
+		<Footer />
 		</>
 	);
 }
