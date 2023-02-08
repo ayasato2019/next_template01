@@ -9,13 +9,13 @@ import { HeaderNav } from './Nav-Header';
 export default function Header() {
 	return (
 		<header className={styles['l-header']}>
-			<UserInfo />
-			<div className={styles['l-header-logo-nav__wrap']}>
-				<a href="/" className={styles['p-headerlogo__link']}>
-					<p className={styles['c-logo-description']}>こだわり手作りパンのサブスク</p>
-					<p className={styles['c-logo']}>Make it!</p>
-				</a>
-				<nav className={styles['l-header-nav__wrap']}>
+		<UserInfo />
+		<div className={styles['l-header-logo-nav__wrap']}>
+		<a href="/" className={styles['p-headerlogo__link']}>
+			<p className={styles['c-logo-description']}>こだわり手作りパンのサブスク</p>
+			<p className={styles['c-logo']}>Make it!</p>
+		</a>
+	<nav className={styles['l-header-nav__wrap']}>
 					{/* <ToggleButton /> */}
 					<HeaderNav/>
 				</nav>

@@ -20,21 +20,23 @@ export default function Footer() {
 						<Link href="/company">
 							Make it!ってなに？
 						</Link>
-					</li>
-					<li className={styles.nav_footer__item}>
-						<Link href="/company">
-							運営会社について
-						</Link>
-					</li>
-					<li className={styles.nav_footer__item}>
-						<Link href="/service">
-							サービスについて
-						</Link>
-					</li>
-					<li className={styles.nav_footer__item}>
-						<Link href="/system">
-							システム
-						</Link>
+						<ol>
+							<li>
+								<Link href="/company">
+									運営会社について
+								</Link>
+							</li>
+							<li>
+								<Link href="/service">
+									サービスについて
+								</Link>
+							</li>
+							<li>
+								<Link href="/system">
+									注文システム
+								</Link>
+							</li>
+						</ol>
 					</li>
 					<li className={styles.nav_footer__item}>
 						<Link href="/product">

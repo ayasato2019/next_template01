@@ -44,12 +44,12 @@ export const HeaderNav = () => {
 					<span>Blog</span>
 				</Link>
 			</li>
-			<li className={styles['p-header-nav__contents-item']}>
+			{/* <li className={styles['p-header-nav__contents-item']}>
 				<Link href="/faq" className={styles['c-header-nav__contents-item-link']}>
 					よくある質問
 					<span>FAQ</span>
 				</Link>
-			</li>
+			</li> */}
 			<li className={styles['p-header-nav__contents-item']}>
 				<Link href="/contact" className={styles['c-header-nav__contents-item-link']}>
 					お問合せ
